@@ -1,0 +1,57 @@
+/* Calculator.css */
+.calculator {
+    width: 300px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #d9d9d9;
+  }
+  
+  .number {
+    grid-column: span 1;
+  }
+  
+  .operator,
+  .equal {
+    grid-column: span 1;
+    background-color: #f8a51f;
+  }
+  
+  .clear {
+    grid-column: span 2;
+    background-color: #ff5c5c;
+  }
+  
+  .decimal {
+    background-color: #b3b3b3;
+  }
